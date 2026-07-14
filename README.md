@@ -1,5 +1,7 @@
 # 🧧 Huat Board: a Business Advisory Board for Claude
 
+Created by Adrian ([@xiohoo](https://x.com/xiohoo)), the team at [xiohooai.com](https://xiohooai.com).
+
 > Say **"huat ask board"** to any business decision and get five functional leaders: Innovator, CFO, COO, General Counsel, and Growth Lead (plus a conditional Dealmaker seat for partnership/expansion decisions) to independently argue it out, review each other's blind spots, and hand you one clear verdict.
 
 You ask one AI a question, you get one answer. It might be great. It might be mid. You have no way to tell, because you only saw one perspective.
@@ -29,9 +31,21 @@ A board where everyone agrees isn't a board. It's a rubber stamp. This one is bu
 
 ## Install
 
-1. Download [`business-advisory-board.skill`](./business-advisory-board.skill) (or just grab `SKILL.md`).
-2. Upload it to Claude (claude.ai → Skills, or drop it in your Claude Code / project skills folder).
-3. Say the magic word.
+**Option A: Claude Code or Claude Desktop (recommended, installs straight from GitHub)**
+
+```
+/plugin marketplace add YOUR-USERNAME/YOUR-REPO-NAME
+/plugin install business-advisory-board@huat-business-advisory-board
+```
+
+Or, in Claude Desktop: Customize panel, Skills, the "+" next to Personal plugins, paste the GitHub repo path, Sync, then Install.
+
+**Option B: claude.ai web (manual upload)**
+
+1. Download [`business-advisory-board.skill`](./business-advisory-board.skill).
+2. Upload it in claude.ai under Settings, Capabilities, Skills.
+
+Either way, then just say the magic word.
 
 ## Use it
 
@@ -56,10 +70,18 @@ It genuinely helps more than you'd think. It's the main way people like you find
 
 ---
 
+## License
+
+Open source under [AGPL-3.0](./LICENSE). You're free to use, modify, and self-host it — if you modify it and offer it as a hosted service, the AGPL requires releasing the source of your changes to your users. Want to use it commercially without that obligation? Reach out via [xiohooai.com](https://xiohooai.com) for a commercial license.
+
+---
+
 ## Want more systems like this for your business?
 
 I build AI-powered decision tools and workflows like this one. If you want to go deeper on using AI to actually run parts of your business (not just chat with it), check out the course at **[xiohooai.com](https://xiohooai.com)**.
 
 ---
+
+Created by Adrian ([@xiohoo](https://x.com/xiohoo)) at [xiohooai.com](https://xiohooai.com).
 
 Inspired by [Andrej Karpathy's LLM Council](https://x.com/karpathy) methodology: dispatch to multiple models, anonymous peer review, chairman synthesis, restructured here as real business functions instead of abstract thinking styles.
