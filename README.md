@@ -31,16 +31,28 @@ A board where everyone agrees isn't a board. It's a rubber stamp. This one is bu
 
 ## Install
 
-**Option A: Claude Code or Claude Desktop (recommended, installs straight from GitHub)**
+**Option A: Claude Code or Claude Desktop, via plugin marketplace (recommended, installs straight from GitHub)**
 
 ```
-/plugin marketplace add YOUR-USERNAME/YOUR-REPO-NAME
+/plugin marketplace add adrianteoyc/Business-Advisory-Board-Skills-for-Claude
 /plugin install business-advisory-board@huat-business-advisory-board
 ```
 
 Or, in Claude Desktop: Customize panel, Skills, the "+" next to Personal plugins, paste the GitHub repo path, Sync, then Install.
 
-**Option B: claude.ai web (manual upload)**
+**Option B: Claude Code, via git clone (direct skill install, no plugin commands)**
+
+Claude Code auto-discovers any `SKILL.md` placed under `~/.claude/skills/<name>/`, so you can skip the plugin system entirely:
+
+```
+git clone https://github.com/adrianteoyc/Business-Advisory-Board-Skills-for-Claude.git
+mkdir -p ~/.claude/skills
+cp -r Business-Advisory-Board-Skills-for-Claude/plugins/business-advisory-board/skills/business-advisory-board ~/.claude/skills/
+```
+
+Want it in just one project instead of everywhere? Copy to `<your-project>/.claude/skills/business-advisory-board` instead of `~/.claude/skills/`.
+
+**Option C: claude.ai web (manual upload)**
 
 1. Download [`business-advisory-board.skill`](./business-advisory-board.skill).
 2. Upload it in claude.ai under Settings, Capabilities, Skills.
