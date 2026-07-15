@@ -10,18 +10,18 @@ The Huat Board fixes that. It's a [Claude Skill](https://docs.claude.com) that r
 
 ---
 
-## Why *these* seats
+## Why _these_ seats
 
 Most multi-agent "council" tools just ask the same question five times and staple the answers together. That's not disagreement, it's noise. The Huat Board is built so the seats structurally collide:
 
-| Seat | Mandate | Clashes with |
-|---|---|---|
-| 🚀 **The Innovator** | Push for the bold, category-defining move | COO (feasibility) |
-| 💰 **The CFO** | Is this worth funding (resource steward, not a hard ROI gate) | Growth Lead (spend vs. runway) |
-| ⚙️ **The COO** | Can this actually ship with the team we have today | Innovator |
-| ⚖️ **General Counsel** | Legal, compliance, and reputational exposure | Growth Lead (speed vs. risk) |
-| 📈 **The Growth Lead** | Market share, positioning, upside everyone's missing | CFO, Legal |
-| 🤝 **The Dealmaker** *(conditional, see below)* | Doors, not funnels: partnerships, distribution, capital, warm intros | CFO (equity/cost), Legal (handshake vs. contract) |
+| Seat                                            | Mandate                                                              | Clashes with                                      |
+| ----------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------- |
+| 🚀 **The Innovator**                            | Push for the bold, category-defining move                            | COO (feasibility)                                 |
+| 💰 **The CFO**                                  | Is this worth funding (resource steward, not a hard ROI gate)        | Growth Lead (spend vs. runway)                    |
+| ⚙️ **The COO**                                  | Can this actually ship with the team we have today                   | Innovator                                         |
+| ⚖️ **General Counsel**                          | Legal, compliance, and reputational exposure                         | Growth Lead (speed vs. risk)                      |
+| 📈 **The Growth Lead**                          | Market share, positioning, upside everyone's missing                 | CFO, Legal                                        |
+| 🤝 **The Dealmaker** _(conditional, see below)_ | Doors, not funnels: partnerships, distribution, capital, warm intros | CFO (equity/cost), Legal (handshake vs. contract) |
 
 A board where everyone agrees isn't a board. It's a rubber stamp. This one is built to argue.
 
@@ -66,18 +66,22 @@ Either way, then just say the magic word.
 ### Updating
 
 **Option A (plugin marketplace):** third-party marketplaces don't auto-update by default, so refresh manually:
+
 ```
 /plugin marketplace update huatly
 /reload-plugins
 ```
+
 Or turn on auto-update yourself: `/plugin` → Marketplaces → select this one → Enable auto-update.
 
 **Option B (git clone):** it's just files on disk — pull and re-copy:
+
 ```
 cd Business-Advisory-Board-Skills-for-Claude
 git pull
 cp -r plugins/huatly-board/skills/convene ~/.claude/skills/
 ```
+
 Then `/reload-plugins` or start a new session.
 
 ## Use it
@@ -93,6 +97,7 @@ It deliberately does **not** trigger on trivial or one-right-answer questions. T
 ## What you get
 
 One file, dropped into your workspace:
+
 - `board-transcript-[timestamp].md`: the chair's verdict up top (agreement, clashes, blind spots, recommendation, one thing to do first, and what would sharpen the next verdict), full board reasoning below it.
 
 ---
@@ -114,7 +119,5 @@ Open source under [AGPL-3.0](./LICENSE). You're free to use, modify, and self-ho
 I build AI-powered decision tools and workflows like this one. If you want to go deeper on using AI to actually run parts of your business (not just chat with it), check out the course at **[xiohooai.com](https://xiohooai.com)**.
 
 ---
-
-Created by Adrian ([@xiohoo](https://x.com/xiohoo)) at [xiohooai.com](https://xiohooai.com).
 
 Inspired by [Andrej Karpathy's LLM Council](https://x.com/karpathy) methodology: dispatch to multiple models, anonymous peer review, chairman synthesis, restructured here as real business functions instead of abstract thinking styles.
