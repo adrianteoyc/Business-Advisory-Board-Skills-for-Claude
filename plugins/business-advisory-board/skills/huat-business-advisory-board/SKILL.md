@@ -1,5 +1,5 @@
 ---
-name: business-advisory-board
+name: huat-business-advisory-board
 description: "Run a business decision through an advisory board of 5 functional leaders (Innovator, CFO, COO, General Counsel, Growth Lead) who independently analyze it, peer-review each other anonymously, and synthesize a verdict. Business roles instead of abstract thinking styles. MANDATORY TRIGGERS: 'huat ask board', 'huat ask advisory board', 'huat advice', 'convene the board', 'war room this', 'pressure-test this', 'stress-test this', 'debate this'. STRONG TRIGGERS (real business tradeoff): 'should I X or Y', 'which option', 'what would you do', 'is this the right move', 'validate this', 'get multiple perspectives', 'I can't decide', 'I'm torn between', especially for product, pricing, hiring, positioning, or company decisions. Do NOT trigger on simple yes/no questions, factual lookups, or casual 'should I' without real tradeoff (e.g. 'should I use markdown' is not a board question). DO trigger for a genuine business decision with real stakes and multiple options."
 ---
 

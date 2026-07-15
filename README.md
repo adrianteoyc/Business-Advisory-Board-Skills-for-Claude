@@ -47,14 +47,14 @@ Claude Code auto-discovers any `SKILL.md` placed under `~/.claude/skills/<name>/
 ```
 git clone https://github.com/adrianteoyc/Business-Advisory-Board-Skills-for-Claude.git
 mkdir -p ~/.claude/skills
-cp -r Business-Advisory-Board-Skills-for-Claude/plugins/business-advisory-board/skills/business-advisory-board ~/.claude/skills/
+cp -r Business-Advisory-Board-Skills-for-Claude/plugins/business-advisory-board/skills/huat-business-advisory-board ~/.claude/skills/
 ```
 
-Want it in just one project instead of everywhere? Copy to `<your-project>/.claude/skills/business-advisory-board` instead of `~/.claude/skills/`.
+Want it in just one project instead of everywhere? Copy to `<your-project>/.claude/skills/huat-business-advisory-board` instead of `~/.claude/skills/`.
 
 **Option C: claude.ai web (manual upload)**
 
-1. Download [`business-advisory-board.skill`](./business-advisory-board.skill).
+1. Download [`huat-business-advisory-board.skill`](./huat-business-advisory-board.skill).
 2. Upload it in claude.ai under Settings, Capabilities, Skills.
 
 Either way, then just say the magic word.
