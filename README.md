@@ -35,10 +35,12 @@ A board where everyone agrees isn't a board. It's a rubber stamp. This one is bu
 
 ```
 /plugin marketplace add adrianteoyc/Business-Advisory-Board-Skills-for-Claude
-/plugin install business-advisory-board@huat-business-advisory-board
+/plugin install huatly-board@huatly
 ```
 
 Or, in Claude Desktop: Customize panel, Skills, the "+" next to Personal plugins, paste the GitHub repo path, Sync, then Install.
+
+Plugin skills are namespaced, so besides the natural-language trigger below, you can also invoke it directly as `/huatly-board:convene`.
 
 **Option B: Claude Code, via git clone (direct skill install, no plugin commands)**
 
@@ -47,17 +49,36 @@ Claude Code auto-discovers any `SKILL.md` placed under `~/.claude/skills/<name>/
 ```
 git clone https://github.com/adrianteoyc/Business-Advisory-Board-Skills-for-Claude.git
 mkdir -p ~/.claude/skills
-cp -r Business-Advisory-Board-Skills-for-Claude/plugins/business-advisory-board/skills/huat-business-advisory-board ~/.claude/skills/
+cp -r Business-Advisory-Board-Skills-for-Claude/plugins/huatly-board/skills/convene ~/.claude/skills/
 ```
 
-Want it in just one project instead of everywhere? Copy to `<your-project>/.claude/skills/huat-business-advisory-board` instead of `~/.claude/skills/`.
+Want it in just one project instead of everywhere? Copy to `<your-project>/.claude/skills/convene` instead of `~/.claude/skills/`.
+
+This install path isn't namespaced, so the direct slash form here is just `/convene`.
 
 **Option C: claude.ai web (manual upload)**
 
-1. Download [`huat-business-advisory-board.skill`](./huat-business-advisory-board.skill).
+1. Download [`convene.skill`](./convene.skill).
 2. Upload it in claude.ai under Settings, Capabilities, Skills.
 
 Either way, then just say the magic word.
+
+### Updating
+
+**Option A (plugin marketplace):** third-party marketplaces don't auto-update by default, so refresh manually:
+```
+/plugin marketplace update huatly
+/reload-plugins
+```
+Or turn on auto-update yourself: `/plugin` → Marketplaces → select this one → Enable auto-update.
+
+**Option B (git clone):** it's just files on disk — pull and re-copy:
+```
+cd Business-Advisory-Board-Skills-for-Claude
+git pull
+cp -r plugins/huatly-board/skills/convene ~/.claude/skills/
+```
+Then `/reload-plugins` or start a new session.
 
 ## Use it
 

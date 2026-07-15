@@ -1,6 +1,6 @@
 {
-  "name": "business-advisory-board",
-  "version": "1.0.0",
+  "name": "huatly-board",
+  "version": "1.1.0",
   "description": "Run a business decision through an advisory board of 5 functional leaders who independently analyze it, peer-review each other anonymously, and synthesize a verdict.",
   "author": {
     "name": "Adrian",

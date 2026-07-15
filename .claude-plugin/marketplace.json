@@ -1,13 +1,13 @@
 {
-  "name": "huat-business-advisory-board",
+  "name": "huatly",
   "owner": {
     "name": "Adrian"
   },
-  "description": "Huat Board: a business advisory board skill for Claude. Runs a business decision through 5 functional leaders who peer-review each other and synthesize a verdict.",
+  "description": "Huatly: business skills for Claude, starting with the Huat Board advisory board.",
   "plugins": [
     {
-      "name": "business-advisory-board",
-      "source": "./plugins/business-advisory-board",
+      "name": "huatly-board",
+      "source": "./plugins/huatly-board",
       "description": "Run a business decision through an advisory board of 5 functional leaders (Innovator, CFO, COO, General Counsel, Growth Lead) who independently analyze it, peer-review each other anonymously, and synthesize a verdict."
     }
   ]
